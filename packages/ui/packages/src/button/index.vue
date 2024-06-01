@@ -1,10 +1,14 @@
 <script lang="ts" setup>
-import { Button } from "vant";
-import defaultValue from "./default-value";
-import { defineComponent } from "vue";
-defineComponent({ name: "Button" });
+import 'vant/lib/index.css';
+import { Button } from 'vant';
 </script>
 <template>
-  <Button :style="defaultValue.style">{{ defaultValue.text }}</Button>
+  <div>
+    <Button>这是按钮</Button>
+  </div>
 </template>
-<style lang="less"></style>
+<style scoped>
+div {
+  background-color: red;
+}
+</style>

@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from "vue";
-const Button = defineAsyncComponent(
-  () =>
-    import(
-      "http://low-code-ui.oss-cn-beijing.aliyuncs.com/custome-vant/button/index.vue"
-    )
+// import { defineAsyncComponent } from 'vue';
+import { defineAsyncComponent } from 'vue';
+
+const AysncRemoteButton = defineAsyncComponent(
+  () => import('remote-v2/button')
 );
+const Image = defineAsyncComponent(() => import('remote-v2/image'));
 </script>
 
 <template>
-  <Button />
-  <div>2323232</div>
+  <AysncRemoteButton />
+  <Image />
 </template>
 
 <style scoped></style>
