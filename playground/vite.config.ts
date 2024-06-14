@@ -17,5 +17,5 @@ export default defineConfig({
       shared: ['vue'],
     }),
   ],
-  build: { target: 'esnext' },
+  build: { target: 'es2020' },
 });
