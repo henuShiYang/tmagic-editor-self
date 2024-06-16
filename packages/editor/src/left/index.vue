@@ -4,7 +4,6 @@ import Side from './components/side.vue';
 <template>
   <div class="editorLeftWrapper">
     <Side />
-    left
   </div>
 </template>
 <style lang="less">
