@@ -8,6 +8,7 @@ import Side from './components/side.vue';
 </template>
 <style lang="less">
 .editorLeftWrapper {
+  height: 100%;
   width: 300px;
 }
 </style>

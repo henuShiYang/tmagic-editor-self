@@ -16,7 +16,9 @@ import Header from './header/index.vue';
 </template>
 <style lang="less">
 .editorWrapper {
+  height: 100%;
   .editorContent {
+    height: calc(100% - 20px);
     display: flex;
   }
 }
