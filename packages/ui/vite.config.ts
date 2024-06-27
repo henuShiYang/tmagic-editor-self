@@ -19,6 +19,7 @@ export default defineConfig({
       filename: 'remote-v2.js',
       exposes: {
         './button': './packages/src/button/index.vue',
+        './buttonConfig': '/packages/src/button/default-value',
         './image': './packages/src/image/index.vue',
       },
       shared: ['vue'],

@@ -1,4 +1,4 @@
 export default {
-  type: "image",
+  type: 'image',
   style: {},
 };

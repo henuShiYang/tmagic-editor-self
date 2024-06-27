@@ -39,9 +39,9 @@ watch(
     deep: true,
   }
 );
-const handleDragOver = (e: DragEvent) => {
-  e.stopPropagation();
-  return false;
+
+const handleDropstart = (e: DragEvent, type: string) => {
+  e.dataTransfer?.setData('text/json', type);
 };
 </script>
 <template>
@@ -55,7 +55,12 @@ const handleDragOver = (e: DragEvent) => {
           </div>
         </template>
         <div v-for="item in dataSource.componentList">
-          <div class="sildContent" draggable="true" @dragover="handleDragOver">
+          <div
+            class="sildContent"
+            draggable="true"
+            @dragover.prevent
+            @dragstart="handleDropstart($event, item.type)"
+          >
             <div class="iconWrapper">
               <component :is="item.icon"></component>
             </div>
